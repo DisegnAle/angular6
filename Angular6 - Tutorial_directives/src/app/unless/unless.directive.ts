@@ -7,6 +7,7 @@ export class UnlessDirective {
 
   // utilizzo set per trasformare unless in una proprietà
   // anche se si tratta di un metodo
+  // appUnless deve essere lo stesso nome della proprietà che viene utilizzata sull'elemento
   @Input() set appUnless(condition:boolean){
     if(!!condition){
       this.vcRef.createEmbeddedView(this.templateRef);
